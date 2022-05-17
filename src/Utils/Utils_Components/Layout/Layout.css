@@ -1,0 +1,25 @@
+.layout{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    }
+.layoutSideBar{
+    flex: .2;
+    height: 100%;
+}
+.layoutRight{
+    flex: .8;
+    height: 100%;
+}
+.dynamicContent{
+    padding: 20px;
+    max-height: calc(100vh - 122px);
+}
+@media screen and (max-width:400px) {
+    .layoutSideBar{
+        display: none;
+    }
+    .layout{
+        display: block;
+    }
+}

@@ -1,0 +1,44 @@
+.card{
+    width: 18.75rem;
+    height: 18.375rem;
+    background: #FFFFFF;
+    /*Gray/200*/border: 1px solid #EAECEE;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .2s ease ;
+    -webkit-transition: all .2s ease ;
+    -moz-transition: all .2s ease ;
+    -ms-transition: all .2s ease ;
+    -o-transition: all .2s ease ;
+}
+.card:hover{
+    transform: translateX(-5px) translateY(-5px);
+    -webkit-transform: translateX(-5px) translateY(-5px);
+    -moz-transform: translateX(-5px) translateY(-5px);
+    -ms-transform: translateX(-5px) translateY(-5px);
+    -o-transform: translateX(-5px) translateY(-5px);
+}
+.card_header{
+    height: 7rem;
+    
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+   align-items: center;
+   padding: 20px;
+   font-size: large;
+   font-family: 'Comic Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+}

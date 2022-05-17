@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Login from './components/LoginPage/Login';
+import Layout from './Utils/Utils_Components/Layout/Layout';
+import BranchPage from './components/BranchPage/BranchPage';
+import SubjectPage from './components/SubjectPage/SubjectPage';
+import LectureInfo from './components/LectureInfo/LectureInfo';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<Login/>} />
+    <Route exact path="/branch" element={<Layout cardType={<BranchPage/>} />} />
+    <Route path='/' element={<Navigate to={"/branch"} replace/>}/>
+    <Route path="/subject/:currentClass" element={<Layout cardType={<SubjectPage/>} />}/>
+    <Route path="/allSubject/id/:currentClass/:sub" element={<Layout cardType={<LectureInfo/>} />}/>
+    </Routes>
+  </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,112 @@
+.loginContainer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.loginPage__left{
+    height: 100%;
+    background-color: black;
+    flex: .55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.loginPage__left>h1{
+    margin-bottom: 1rem;
+}
+.loginPage__left>h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.loginPage__Right{
+    height: 100%;
+    flex: .4;
+    display: grid;
+    place-items: center;
+}
+.loginForm{
+    padding: 20px;
+}
+
+
+/* Form */
+.loginForm>h4{
+    text-align: center;
+    margin-top: 1rem;
+    color: gray;
+    font-weight: 500;
+}
+.login_btn{
+    padding: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+.login_btn:hover{
+    box-shadow: 0 0 10px black;
+}
+.loginForm__middle__input:hover{
+    border:.1px solid black;
+}
+.loginForm__middle__input>input{
+    border: none;
+    outline: none;
+    background-color: #EEE9E9;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.loginForm__top>h3,.loginForm__top>h4{
+    margin-bottom: 1rem;
+    /* font-size: 1.5rem;
+    font-weight: 700; */
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 2rem;
+line-height: 29px;
+}
+.loginForm__middle__input{
+    display: flex;
+    padding: 10px 12px;
+    justify-content: space-around;
+    
+    background: #EEE9E9;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-bottom: .6rem;
+}
+
+@media screen and (max-width:780px) {
+    .loginPage__left{
+        flex: 1;
+        width: 100%;
+    }
+    .loginPage__Right{
+        flex: 1;
+        width: 100%;
+    }
+    .loginForm{
+        padding: 15px;
+    }
+   
+}

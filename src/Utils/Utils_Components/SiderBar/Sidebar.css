@@ -1,0 +1,45 @@
+.sideBar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 36px;
+}
+.sideBar>h1{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
+}
+
+.sidebar__Nav{
+    margin-top: 3rem;
+}
+.sidebar__Nav__links{
+    display: flex;
+    align-items: center;
+ 
+    text-align: center;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    
+    
+}
+.sidebar__Nav__links:hover{
+    background: #242D35;
+    color: #6E6EF7;
+}
+.sidebar__Nav__links>span{
+    margin-left: 1rem;
+    font-size: large;
+}
+@media screen and (max-width:400px) {
+    .sideBar{
+        display: none;
+    }
+}

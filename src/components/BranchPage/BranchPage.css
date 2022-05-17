@@ -1,0 +1,21 @@
+.branch{
+    padding: 30px;
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    height: 100%;
+    overflow-y: scroll;
+    max-height: calc(100vh - 122px);
+}
+/* 
+@media screen and (max-width:1187px) {
+    .branch{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and () {
+    
+} */
