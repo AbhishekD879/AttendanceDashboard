@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/AttendanceDashboard/static/css/main.59d41656.css",
-    "main.js": "/AttendanceDashboard/static/js/main.3b185927.js",
+    "main.js": "/AttendanceDashboard/static/js/main.9185fc64.js",
     "static/media/classes.svg": "/AttendanceDashboard/static/media/classes.32d80c2d7802ebf906b81114e05cbe9b.svg",
     "static/media/passwordlogo.svg": "/AttendanceDashboard/static/media/passwordlogo.d4e482ee59727a2a1508dbbc714a1d6e.svg",
     "static/media/contact.svg": "/AttendanceDashboard/static/media/contact.81e626c80ef90730e0530604b358d34e.svg",
     "index.html": "/AttendanceDashboard/index.html",
     "static/media/usernamelogo.svg": "/AttendanceDashboard/static/media/usernamelogo.88990d82eadffbda73002af47d702541.svg",
     "main.59d41656.css.map": "/AttendanceDashboard/static/css/main.59d41656.css.map",
-    "main.3b185927.js.map": "/AttendanceDashboard/static/js/main.3b185927.js.map"
+    "main.9185fc64.js.map": "/AttendanceDashboard/static/js/main.9185fc64.js.map"
   },
   "entrypoints": [
     "static/css/main.59d41656.css",
-    "static/js/main.3b185927.js"
+    "static/js/main.9185fc64.js"
   ]
 }
