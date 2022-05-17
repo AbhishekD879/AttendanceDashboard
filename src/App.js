@@ -16,9 +16,9 @@ function App() {
     <div className="App">
   <BrowserRouter>
     <Routes>
-    <Route path="/" element={<Login/>} />
+    <Route exact path="/" element={<Login/>} />
     <Route exact path="/branch" element={<Layout cardType={<BranchPage/>} />} />
-    <Route path='/' element={<Navigate to={"/branch"} replace/>}/>
+    {/* <Route path='/' element={<Navigate to={"/branch"} replace/>}/> */}
     <Route path="/subject/:currentClass" element={<Layout cardType={<SubjectPage/>} />}/>
     <Route path="/allSubject/id/:currentClass/:sub" element={<Layout cardType={<LectureInfo/>} />}/>
     </Routes>
