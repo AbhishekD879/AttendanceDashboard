@@ -32,7 +32,8 @@ const Login = () => {
             })).data;
             // alert(JSON.stringify(userDetails))
             if(userDetails){
-                
+                console.log(userDetails)
+                localStorage.removeItem("userdetails")
                 localStorage.setItem("userdetails",JSON.stringify(userDetails))
             toast.success("Login Success!",{
                 position: "top-center",
