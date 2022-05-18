@@ -10,10 +10,13 @@ const SubjectPage = () => {
     const [subject,setSubject]=useState([])
     const getSubject=async()=>{
         let {token}=JSON.parse(localStorage.getItem("userdetails"))
-        
+        const AuthStr = 'Bearer '.concat(token)
         let {data}=await apiConfig.get(`dashboard/subject/${JSON.parse(localStorage.getItem("userdetails")).id}/${currentClass}`,{
           params: {
             token
+          },
+          headers:{
+            'authorization':AuthStr
           }
          })
          setSubject(data)

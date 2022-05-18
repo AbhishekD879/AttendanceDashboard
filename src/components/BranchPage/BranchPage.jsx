@@ -10,10 +10,13 @@ const BranchPage = () => {
   const [branch,setBranch]=useState([])
   const getBranch=async()=>{
     let {token}=JSON.parse(localStorage.getItem("userdetails"))
-    
+    const AuthStr = 'Bearer '.concat(token)
     let {data}=await apiConfig.get(`dashboard/getBranch/${JSON.parse(localStorage.getItem("userdetails")).id}`,{
       params: {
         token
+      },
+      headers:{
+        'authorization':AuthStr
       }
      
     })

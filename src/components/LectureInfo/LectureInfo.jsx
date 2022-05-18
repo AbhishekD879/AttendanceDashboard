@@ -13,9 +13,13 @@ const LectureInfo = () => {
   const{currentClass,sub}=useParams()
   const getLectue=async()=>{
       let {token}=JSON.parse(localStorage.getItem("userdetails"))
+      const AuthStr = 'Bearer '.concat(token)
       const {data}=await apiConfig.get(`/dashboard/allSubject/${JSON.parse(localStorage.getItem("userdetails")).id}/${currentClass}/${sub}`,{
           params:{
             token
+          },
+          headers:{
+            'authorization':AuthStr
           }
       })
     let sortedData=data.sort((a,b) => +a.lectureNo- +b.lectureNo);
