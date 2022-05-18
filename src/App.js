@@ -14,7 +14,7 @@ import {
 function App() {
   return (
     <div className="App">
-  <BrowserRouter>
+  <BrowserRouter basename='/AttendanceDashboard'>
     <Routes>
     <Route exact path="/" element={<Login/>} />
     <Route exact path="/branch" element={<Layout cardType={<BranchPage/>} />} />

@@ -25,7 +25,11 @@ const Login = () => {
                 });
         }else{
             
-            let {userDetails}=(await apiConfig.post("/dashboard/login",{username,password})).data;
+            let {userDetails}=(await apiConfig.post("/dashboard/login",{username,password},{
+                headers:{
+                    "Access-Control-Allow-Origin": "*",
+                }
+            })).data;
             // alert(JSON.stringify(userDetails))
             if(userDetails){
                 
