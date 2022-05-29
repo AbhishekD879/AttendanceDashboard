@@ -76,7 +76,7 @@ const Login = () => {
                 </div>
                 <div className='loginForm__middle__input'>
                     <img src={passwordlogo} alt="password"/>
-                    <input type="text" onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' value={password}/>
+                    <input type="password" onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' value={password}/>
                </div>
                <button onClick={handelLogin} className='login_btn'>
                     Login
